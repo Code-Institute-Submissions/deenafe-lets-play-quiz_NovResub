@@ -45,7 +45,7 @@ body {
     opacity: 0.5;
 } 
 
-/* Heading  */
+/* Heading and Question area*/
 
 .heading {
     text-transform: uppercase;
@@ -55,6 +55,15 @@ body {
 
 .questions-area {
     margin-left: 25px;
-    width: 60%;
+    width: 80%;
     
+}
+
+.question-field {
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.answers {
+    padding: 10px;
 }

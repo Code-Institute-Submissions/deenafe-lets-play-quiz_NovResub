@@ -12,7 +12,7 @@ body {
     color: #36454F;
 }
 
-/* Header and Links */
+/* Headings and Links */
 
 .header-wrapper {
     background-color: antiquewhite;
@@ -45,13 +45,13 @@ body {
     opacity: 0.5;
 } 
 
-/* Heading and Question area*/
-
 .heading {
     text-transform: uppercase;
     text-align: center;
     margin-top: 15px;
 }
+
+/* Question area*/
 
 .questions-area {
     margin-left: 25px;
@@ -67,3 +67,19 @@ body {
 .answers {
     padding: 10px;
 }
+
+legend {
+    font-weight: 700;
+}
+
+
+/* Button */
+
+.btn {
+    background-color: green;
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+

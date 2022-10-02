@@ -20,12 +20,6 @@ body {
     justify-content: space-between;
 }
 
-/* .game-rules {
-    font-size: 120%;
-    padding: 30px;
-    text-transform: uppercase;
-    text-decoration: underline;
-} */
 
 .game-rules {
     padding: 30px;
@@ -80,6 +74,10 @@ body {
 
 }
 
+.popup-modal {
+    visibility: visible;
+}
+
 
 .new-user {
     padding: 30px;
@@ -92,6 +90,8 @@ body {
     text-decoration: underline;
     opacity: 0.5;
 } 
+
+/* Start quiz*/
 
 .start-quiz {
     text-align: center;
@@ -122,17 +122,16 @@ body {
     margin-top: 25px;
 }
 
-.popup-modal {
-    visibility: visible;
-}
 
 /* Question area*/
 
 .questions-area {
     margin-left: 25px;
     width: 80%;
+    display: none;
     
 }
+
 
 .question-field {
     margin-bottom: 20px;
@@ -158,3 +157,7 @@ legend {
     margin-bottom: 15px;
 }
 
+
+.score-area {
+    display: none;
+}

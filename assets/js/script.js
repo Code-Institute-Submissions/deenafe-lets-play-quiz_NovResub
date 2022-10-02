@@ -13,3 +13,22 @@ function closePopup(event) {
 
 popOpen.addEventListener('click', openPopup);
 popClose.addEventListener('click', closePopup);
+
+// Start quiz button
+let startButton = document.getElementById("start-btn")
+let startQuiz = document.getElementsByClassName("start-quiz")
+
+
+function displayQuestions(event) {
+    let displayQuestions = document.getElementById("questions-area").style.display = "block";
+}
+
+// function removeStart(event) {
+//     startQuiz.remove()
+// }
+
+
+startButton.addEventListener('click', displayQuestions)
+// startQuiz.addEventListener('click', removeStart)
+
+

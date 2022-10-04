@@ -132,6 +132,11 @@ body {
     
 }
 
+.questions-area h2 {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
 
 .question-field {
     margin-bottom: 20px;

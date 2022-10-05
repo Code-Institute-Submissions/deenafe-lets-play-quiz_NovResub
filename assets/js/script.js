@@ -13,7 +13,7 @@ popOpen.addEventListener('click', modalOpen);
 popClose.addEventListener('click', modalClose);
 
 
-
+//  This displays the questions after user cilck the "Start Quiz" button
 
 function displayQuestions() {
     document.getElementById("questions-area").style.display = "block";
@@ -23,7 +23,7 @@ let startButton = document.getElementById("start-btn")
 startButton.addEventListener('click', displayQuestions)
 
 
-// Display Seclection Radio values
+// Displays Seclected Radio values
 
 const question1 = document.getElementsByName('question1');
 const question2 = document.getElementsByName('question2');
@@ -35,11 +35,6 @@ const question7 = document.getElementsByName('question7');
 const question8 = document.getElementsByName('question8');
 const question9 = document.getElementsByName('question9');
 const question10 = document.getElementsByName('question10');
-
-// const radio = document.getElementsByTagName('input')
-// for (let r = 0; r < radio.length; r++) {
-//     let radioButton = radio[r]
-// }
 
 
 function displayRadioValue() {
@@ -129,66 +124,56 @@ question9.forEach(el => el.addEventListener('click', displayRadioValue))
 question10.forEach(el => el.addEventListener('click', displayRadioValue))
 
 
+//  This will check the correct answers and assign scores 
 
+function check() {
 
+    let correct = 0;
 
+    if (question1[1].checked === true) {
+        correct++;
+    }
 
+    if (question2[3].checked === true) {
+        correct++;
+    }
 
+    if (question3[1].checked === true) {
+        correct++;
+    }
 
-// function check() {
-//     let question1 = document.getElementsByName('question1').value
-//     let question2 = document.getElementsByName('question2').value
-//     let question3 = document.getElementsByName('question3').value
-//     let question4 = document.getElementsByName('question4').value
-//     let question5 = document.getElementsByName('question5').value
-//     let question6 = document.getElementsByName('question6').value
-//     let question7 = document.getElementsByName('question7').value
-//     let question8 = document.getElementsByName('question8').value
-//     let question9 = document.getElementsByName('question9').value
-//     let question10 = document.getElementsByName('question10').value
-//     let correct = 0;
+    if (question4[2].checked === true) {
+        correct++;
+    }
 
-//     if (question1 === "earth") {
-//         correct++;
-//     }
+    if (question5[0].checked === true) {
+        correct++;
+    }
 
-//     if (question2 === "alan-shearer") {
-//         correct++;
-//     }
+    if (question6[0].checked === true) {
+        correct++;
+    }
 
-//     if (question3 === "poland") {
-//         correct++;
-//     }
+    if (question7[3].checked === true) {
+        correct++;
+    }
 
-//     if (question4 === "france") {
-//         correct++;
-//     }
+    if (question8[0].checked === true) {
+        correct++;
+    }
 
-//     if (question5 === "dermatologist") {
-//         correct++;
-//     }
+    if (question9[0].checked=== true) {
+        correct++;
+    }
 
-//     if (question6 === "reforestation") {
-//         correct++;
-//     }
+    if (question10[1].checked === true) {
+        correct++;
+    }
 
-//     if (question7 === "grammys") {
-//         correct++;
-//     }
+    document.getElementById('score-area').style.visibility = "visible";
+    document.getElementById('scores').innerHTML = "You got " + correct + " correct.";
+}
 
-//     if (question8 === "liver") {
-//         correct++;
-//     }
-
-//     if (question9 === "tim-berners-lee") {
-//         correct++;
-//     }
-
-//     if (question10 === "china") {
-//         correct++;
-//     }
-
-//     document.getElementById('score-area').style.visibility = "visible";
-//     document.getElementById('scores').innerHTML = "You got " + correct + " correct.";
-// }
+const submitButton = document.getElementById('btn-sub');
+submitButton.addEventListener('click', check)
 

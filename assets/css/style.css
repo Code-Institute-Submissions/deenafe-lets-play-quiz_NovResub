@@ -163,6 +163,6 @@ legend {
 }
 
 
-.score-area {
-    display: none;
+#score-area {
+    visibility: hidden;
 }

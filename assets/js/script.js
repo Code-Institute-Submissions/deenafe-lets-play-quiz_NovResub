@@ -19,8 +19,8 @@ function displayQuestions() {
     document.getElementById("questions-area").style.display = "block";
 }
 
-let startButton = document.getElementById("start-btn")
-startButton.addEventListener('click', displayQuestions)
+let startButton = document.getElementById("start-btn");
+startButton.addEventListener('click', displayQuestions);
 
 
 // Displays Seclected Radio values
@@ -111,24 +111,25 @@ function displayRadioValue() {
     
 }
 
-// Assisted by Tutor Ed
-question1.forEach(el => el.addEventListener('click', displayRadioValue))
-question2.forEach(el => el.addEventListener('click', displayRadioValue))
-question3.forEach(el => el.addEventListener('click', displayRadioValue))
-question4.forEach(el => el.addEventListener('click', displayRadioValue))
-question5.forEach(el => el.addEventListener('click', displayRadioValue))
-question6.forEach(el => el.addEventListener('click', displayRadioValue))
-question7.forEach(el => el.addEventListener('click', displayRadioValue))
-question8.forEach(el => el.addEventListener('click', displayRadioValue))
-question9.forEach(el => el.addEventListener('click', displayRadioValue))
-question10.forEach(el => el.addEventListener('click', displayRadioValue))
+// Assisted by Tutor Ed (Calls the displayRadioValue function on each button for all radio groups)
+question1.forEach(el => el.addEventListener('click', displayRadioValue));
+question2.forEach(el => el.addEventListener('click', displayRadioValue));
+question3.forEach(el => el.addEventListener('click', displayRadioValue));
+question4.forEach(el => el.addEventListener('click', displayRadioValue));
+question5.forEach(el => el.addEventListener('click', displayRadioValue));
+question6.forEach(el => el.addEventListener('click', displayRadioValue));
+question7.forEach(el => el.addEventListener('click', displayRadioValue));
+question8.forEach(el => el.addEventListener('click', displayRadioValue));
+question9.forEach(el => el.addEventListener('click', displayRadioValue));
+question10.forEach(el => el.addEventListener('click', displayRadioValue));
 
 
 //  This will check the correct answers and assign scores 
+let correct = 0;
 
-function check() {
+function checkAnswer() {
 
-    let correct = 0;
+    
 
     if (question1[1].checked === true) {
         correct++;
@@ -171,9 +172,37 @@ function check() {
     }
 
     document.getElementById('score-area').style.visibility = "visible";
-    document.getElementById('scores').innerHTML = "You got " + correct + " correct.";
+    document.getElementById('scores').innerHTML = "You scored " + correct + " from 10.";
 }
 
 const submitButton = document.getElementById('btn-sub');
-submitButton.addEventListener('click', check)
+submitButton.addEventListener('click', checkAnswer);
 
+// This should display a message and image depending on the score
+let gradeMessage = document.getElementById('grade-message');
+
+function scoreGrading() {
+    let scoreArea = document.getElementById('score-area')
+    let pics = ["../images/poor1.webp", "../images/better2.webp", "../images/dobetter3.webp", "../images/fantastic4.webp", "../images/genius5.webp"]
+   
+
+    if (correct < 1) {
+        gradeMessage.innerHTML = `<img src="${pics[1]}" alt="Two men with gloomy demeanor">  <span>A poor result, why not try again</span> `}
+     
+     if (correct > 1 && correct < 5) {
+        gradeMessage.innerHTML = `<img src="${pics[2]}" alt="Man in kung-fu pose challenging viewer to do better">  <span> You can do better, why not try again. </span> ` }
+     
+     if (correct >= 5 && correct < 8) {
+        gradeMessage.innerHTML = `<img src="${pics[3]}" alt="Man encouraging and urging viewer to improve"> <span> You did good, try harder next time. </span>` }
+     
+     if (correct >= 8 && correct < 10) {
+        gradeMessage.innerHTML = `<img src="${pics[4]}" alt="Man performing on stage in exicted mood"> <span> You did good, try harder next time. </span>`}
+     
+     if (correct == 10) {
+        gradeMessage.innerHTML = `<img src="${pics[5]}" alt="A famous genius, Albert Einstein"> <span> Excellent, you must be a genuis. </span>`}
+
+}
+
+submitButton.addEventListener('click', scoreGrading)
+
+// let allAnswered = [question1[i].checked, question2.checked[i], question3.checked[i], question4.checked[i], question5.checked[i], question6.checked[i], question7.checked[i], question8.checked[i], question9.checked[i], question10.checked[i] ]

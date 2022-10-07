@@ -101,6 +101,10 @@ body {
     margin: 50px 10px;
 }
 
+/* #start-quiz {
+    display: block;
+} */
+
 
 .start-quiz h1 {
     text-transform: uppercase;
@@ -162,7 +166,76 @@ legend {
     margin-bottom: 15px;
 }
 
+#error {
+    color: red;
+    text-transform: capitalize;
+    font-size: 120%;
+    padding: 20px;
+    font-weight: bold;
+}
+
+/* Score area */
+
+.score-area {
+    width: 40%;
+    position: fixed;
+    bottom: 20%;
+    left: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #800020;
+    background-color: #87C1FF;
+    height: 70%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  
+   
+}
 
 #score-area {
     visibility: hidden;
+}
+
+#scores, #grade-message span {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    
+}
+
+/* #grade-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+#grade-message img {
+    margin: 10px;
+    width: 50%;
+}
+
+#grade-message span {
+    margin-bottom: 20px;
+}
+
+#restart {
+    border: 1px solid #87C1FF;
+    border-radius: 4px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #800020;
+}
+
+#restart a {
+    text-decoration: none;
+    font-weight: bold;
+    color: green;
+    font-size: 150%;
+}
+
+#restart a:hover {
+    opacity: 0.5;
 }

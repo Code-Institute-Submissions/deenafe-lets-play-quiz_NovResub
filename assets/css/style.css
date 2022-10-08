@@ -99,11 +99,12 @@ body {
     border-radius: 20px;
     padding: 5px 5px;
     margin: 50px 10px;
+    display: block;
 }
 
-/* #start-quiz {
-    display: block;
-} */
+.remove-start {
+    display: none;
+}
 
 
 .start-quiz h1 {

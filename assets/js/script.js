@@ -128,3 +128,148 @@ question7.forEach(el => el.addEventListener('click', displayRadioValue));
 question8.forEach(el => el.addEventListener('click', displayRadioValue));
 question9.forEach(el => el.addEventListener('click', displayRadioValue));
 question10.forEach(el => el.addEventListener('click', displayRadioValue));
+
+
+//  This will check the correct answers and assign scores 
+let correct = 0;
+function checkAnswer() {
+    
+    if (question1[1].checked === true) {
+        correct++;
+    }
+    if (question2[3].checked === true) {
+        correct++;
+    }
+    if (question3[1].checked === true) {
+        correct++;
+    }
+    if (question4[2].checked === true) {
+        correct++;
+    }
+    if (question5[0].checked === true) {
+        correct++;
+    }
+    if (question6[0].checked === true) {
+        correct++;
+    }
+    if (question7[3].checked === true) {
+        correct++;
+    }
+    if (question8[0].checked === true) {
+        correct++;
+    }
+    if (question9[0].checked=== true) {
+        correct++;
+    }
+    if (question10[1].checked === true) {
+        correct++;
+    }
+    document.getElementById('score-area').style.visibility = "visible";
+    document.getElementById('scores').innerHTML = "You scored " + correct + " from 10.";
+}
+const submitButton = document.getElementById('btn-sub');
+submitButton.addEventListener('click', checkAnswer);
+
+
+// This should display a message and image depending on the score
+let gradeMessage = document.getElementById('grade-message');
+
+function scoreGrading() {
+    let pics = ["assets/images/poor1.webp", "assets/images/better2.webp", "assets/images/dobetter3.webp", "assets/images/fantastic4.webp", "assets/images/genius5.webp"]
+
+
+    if (correct < 1) {
+        gradeMessage.innerHTML = `<img src="${pics[0]}" alt="Two men with gloomy demeanor"> <br> <span>A poor result, why not try again</span> `}
+
+     if (correct > 1 && correct < 5) {
+        gradeMessage.innerHTML = `<img src="${pics[1]}" alt="Man in kung-fu pose challenging viewer to do better"> <br> <span> You can do better, why not try again. </span> ` }
+
+     if (correct >= 5 && correct < 8) {
+        gradeMessage.innerHTML = `<img src="${pics[2]}" alt="Man encouraging and urging viewer to improve"> <br> <span> You did good, but you can do better. </span>` }
+
+     if (correct >= 8 && correct < 10) {
+        gradeMessage.innerHTML = `<img src="${pics[3]}" alt="Man performing on stage in exicted mood"> <br> <span> You did Great!!!. </span>`}
+
+     if (correct == 10) {
+        gradeMessage.innerHTML = `<img src="${pics[4]}" alt="A famous genius, Albert Einstein"> <br> <span> Excellent!!! you must be a genuis. </span>`}
+
+}
+
+submitButton.addEventListener('click', scoreGrading)
+
+
+function checkRadioInput() {
+    for (i = 0; i < question1.length; i++) {
+        if(!question1[i].checked) { 
+            document.getElementsByClassName('question-field')[0].style.border = "2px solid red"
+            break
+        }
+    }
+
+    for (i = 0; i < question2.length; i++) {
+        if(!question2[i].checked) { 
+            document.getElementsByClassName('question-field')[1].style.border = "2px solid red"
+            break
+        }
+    }
+
+    for (i = 0; i < question3.length; i++) {
+        if(!question3[i].checked) { 
+            document.getElementsByClassName('question-field')[2].style.border = "2px solid red"
+            break
+        }
+    }
+
+    for (i = 0; i < question4.length; i++) {
+        if(!question4[i].checked) { 
+            document.getElementsByClassName('question-field')[3].style.border = "2px solid red"
+            break
+        }
+    }
+
+        for (i = 0; i < question5.length; i++) {
+            if(!question5[i].checked) { 
+                document.getElementsByClassName('question-field')[4].style.border = "2px solid red"
+                break
+            }
+        }
+
+        for (i = 0; i < question6.length; i++) {
+            if(!question6[i].checked) { 
+                document.getElementsByClassName('question-field')[5].style.border = "2px solid red"
+                break
+            }
+        }
+
+        for (i = 0; i < question7.length; i++) {
+            if(!question7[i].checked) { 
+                document.getElementsByClassName('question-field')[6].style.border = "2px solid red"
+                break
+            }
+        }
+
+        for (i = 0; i < question8.length; i++) {
+            if(!question8[i].checked) { 
+                document.getElementsByClassName('question-field')[7].style.border = "2px solid red"
+                break
+            }
+        }
+
+         for (i = 0; i < question9.length; i++) {
+        if(!question9[i].checked) { 
+            document.getElementsByClassName('question-field')[8].style.border = "2px solid red"
+            break
+        }
+    }
+
+    for (i = 0; i < question10.length; i++) {
+        if(!question10[i].checked) { 
+            document.getElementsByClassName('question-field')[9].style.border = "2px solid red"
+            break
+        }
+    }
+
+    
+    }
+
+submitButton.addEventListener('click', checkRadioInput)

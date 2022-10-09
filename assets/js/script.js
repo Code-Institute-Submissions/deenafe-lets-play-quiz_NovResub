@@ -200,63 +200,6 @@ function scoreGrading() {
 submitButton.addEventListener('click', scoreGrading)
 
 
-function validate() {
-    if ( ( question1[0].checked == false ) || ( question1[1].checked == false ) || ( question1[2].checked == false ) || ( question1[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-       
-    }
-    
-
-    if ( ( question2[0].checked == false ) || ( question2[1].checked == false ) || ( question2[2].checked == false ) || ( question2[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question3[0].checked == false ) || ( question3[1].checked == false ) || ( question3[2].checked == false ) || ( question3[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question4[0].checked == false ) || ( question4[1].checked == false ) || ( question4[2].checked == false ) || ( question4[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question5[0].checked == false ) || ( question5[1].checked == false ) || ( question5[2].checked == false ) || ( question5[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question6[0].checked == false ) || ( question6[1].checked == false ) || ( question6[2].checked == false ) || ( question6[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question7[0].checked == false ) || ( question7[1].checked == false ) || ( question7[2].checked == false ) || ( question7[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }  
-
-        if ( ( question8[0].checked == false ) || ( question8[1].checked == false ) || ( question8[2].checked == false ) || ( question8[3].checked == false )) {
-            document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-          
-        }
-
-    if ( ( question9[0].checked == false ) || ( question9[1].checked == false ) || ( question9[2].checked == false ) || ( question9[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-        
-    }
-
-    if ( ( question10[0].checked == false ) || ( question10[1].checked == false ) || ( question10[2].checked == false ) || ( question10[3].checked == false )) {
-        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
-       
-    } else {
-        document.getElementById("error").innerHTML= "";
-    }
-}
-
-submitButton.addEventListener('click', validate)
-
 
 
 

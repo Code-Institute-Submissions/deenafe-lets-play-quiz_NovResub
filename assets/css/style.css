@@ -12,14 +12,13 @@ body {
     color: #36454F;
 }
 
-/* Headings and Links */
+/* Header, game rules */
 
 .header-wrapper {
     background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
 }
-
 
 .game-rules {
     padding: 30px;
@@ -71,20 +70,16 @@ body {
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-
 }
 
 .popup-modal {
     visibility: visible;
 }
 
-
 .new-user {
     padding: 30px;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
-
 
 .new-user a:hover {
     text-decoration: underline;
@@ -105,7 +100,6 @@ body {
 .remove-start {
     display: none;
 }
-
 
 .start-quiz h1 {
     text-transform: uppercase;
@@ -133,15 +127,13 @@ body {
 .questions-area {
     margin-left: 25px;
     width: 80%;
-    display: none;
-    
+    display: none; 
 }
 
 .questions-area h2 {
     margin-bottom: 10px;
     text-transform: capitalize;
 }
-
 
 .question-field {
     margin-bottom: 20px;
@@ -186,12 +178,7 @@ legend {
     padding: 20px;
     border: 2px solid #800020;
     background-color: #87C1FF;
-    height: 70%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-  
-   
+    height: 70%;   
 }
 
 #score-area {
@@ -202,15 +189,8 @@ legend {
     text-transform: uppercase;
     color: black;
     font-weight: bold;
-    padding: 10px;
-    
+    padding: 10px; 
 }
-
-/* #grade-message {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 #grade-message img {
     margin: 10px;

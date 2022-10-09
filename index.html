@@ -12,7 +12,7 @@
 
 <body>
 
-    <!-- Header buttons and Logo -->
+    <!-- Header button to display Quiz Game features-->
 
     <header class="header-wrapper">
         <div class="game-rules">
@@ -33,6 +33,8 @@
 
         </div>
 
+        <!-- Logo -->
+
         <div id="logo"> <img src="assets/images/quiz-logo.jpg" alt="Quiz Logo">
         </div>
 
@@ -41,13 +43,13 @@
         </div>
     </header>
 
+    <!-- Start quiz to dsiplay question-->
     <div class="start-quiz" id="start-quiz">
         <h1 class="heading">Let's put your knowledge to the test</h1>
         <button type="button" id="start-btn">Start Quiz >>>> </button>
     </div>
 
-
-
+    <!-- Form containing fieldsets of radio groups of questions-->
     <form id="quiz-form" action="#" onsubmit="return false">
 
         <div class="questions-area" id="questions-area">
@@ -67,7 +69,6 @@
                     <label for="q1-ans4"> Saturn </label>
                     <div id="result1"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -84,7 +85,6 @@
                     <label for="q2-ans4"> Alan Shearer </label>
                     <div id="result2"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -101,7 +101,6 @@
                     <label for="q3-ans4"> England </label>
                     <div id="result3"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -117,7 +116,6 @@
                     <label for="q4-ans4"> Germany</label>
                     <div id="result4"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -133,7 +131,6 @@
                     <label for="q5-ans4"> Gynecologist </label>
                     <div id="result5"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -150,7 +147,6 @@
                     <label for="q6-ans4"> Burning refuse </label>
                     <div id="result6"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -168,7 +164,6 @@
                     <label for="q7-ans4"> Grammys </label> 
                     <div id="result7"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -184,7 +179,6 @@
                     <label for="q8-ans4"> Kidney </label>
                     <div id="result8"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -201,7 +195,6 @@
                     <label for="q9-ans4"> Thomas Edison </label>
                     <div id="result9"></div>
                 </div>
-
             </fieldset>
 
             <fieldset class="question-field">
@@ -217,19 +210,16 @@
                     <label for="q10-ans4"> Russia </label>
                     <div id="result10"></div>
                 </div>
-
             </fieldset>
 
+            <!-- Form submit button-->
             <div>
                 <button class="btn" id="btn-sub" type="submit">Submit Quiz</button><span id="error"></span>
-
             </div>
-
         </div>
-
     </form>
-
-
+    
+      <!-- Score area div to display Scores, image and message depending on score-->
     <div id="score-area" class="score-area">
         <p id="scores"></p> 
         <p id="grade-message"> </p> 
@@ -237,7 +227,6 @@
         <a href="index.html"> Restart Quiz</a>
         </div>
     </div>
-
 
     <script src="assets/js/script.js"></script>
 </body>

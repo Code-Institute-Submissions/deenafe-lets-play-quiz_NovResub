@@ -166,6 +166,8 @@ function checkAnswer() {
     }
     document.getElementById('score-area').style.visibility = "visible";
     document.getElementById('scores').innerHTML = "You scored " + correct + " from 10.";
+
+    
 }
 const submitButton = document.getElementById('btn-sub');
 submitButton.addEventListener('click', checkAnswer);
@@ -198,78 +200,64 @@ function scoreGrading() {
 submitButton.addEventListener('click', scoreGrading)
 
 
-function checkRadioInput() {
-    for (i = 0; i < question1.length; i++) {
-        if(!question1[i].checked) { 
-            document.getElementsByClassName('question-field')[0].style.border = "2px solid red"
-            break
-        }
+function validate() {
+    if ( ( question1[0].checked == false ) || ( question1[1].checked == false ) || ( question1[2].checked == false ) || ( question1[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+       
+    }
+    
+
+    if ( ( question2[0].checked == false ) || ( question2[1].checked == false ) || ( question2[2].checked == false ) || ( question2[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
 
-    for (i = 0; i < question2.length; i++) {
-        if(!question2[i].checked) { 
-            document.getElementsByClassName('question-field')[1].style.border = "2px solid red"
-            break
-        }
+    if ( ( question3[0].checked == false ) || ( question3[1].checked == false ) || ( question3[2].checked == false ) || ( question3[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
 
-    for (i = 0; i < question3.length; i++) {
-        if(!question3[i].checked) { 
-            document.getElementsByClassName('question-field')[2].style.border = "2px solid red"
-            break
-        }
+    if ( ( question4[0].checked == false ) || ( question4[1].checked == false ) || ( question4[2].checked == false ) || ( question4[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
 
-    for (i = 0; i < question4.length; i++) {
-        if(!question4[i].checked) { 
-            document.getElementsByClassName('question-field')[3].style.border = "2px solid red"
-            break
-        }
+    if ( ( question5[0].checked == false ) || ( question5[1].checked == false ) || ( question5[2].checked == false ) || ( question5[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
 
-        for (i = 0; i < question5.length; i++) {
-            if(!question5[i].checked) { 
-                document.getElementsByClassName('question-field')[4].style.border = "2px solid red"
-                break
-            }
-        }
-
-        for (i = 0; i < question6.length; i++) {
-            if(!question6[i].checked) { 
-                document.getElementsByClassName('question-field')[5].style.border = "2px solid red"
-                break
-            }
-        }
-
-        for (i = 0; i < question7.length; i++) {
-            if(!question7[i].checked) { 
-                document.getElementsByClassName('question-field')[6].style.border = "2px solid red"
-                break
-            }
-        }
-
-        for (i = 0; i < question8.length; i++) {
-            if(!question8[i].checked) { 
-                document.getElementsByClassName('question-field')[7].style.border = "2px solid red"
-                break
-            }
-        }
-
-         for (i = 0; i < question9.length; i++) {
-        if(!question9[i].checked) { 
-            document.getElementsByClassName('question-field')[8].style.border = "2px solid red"
-            break
-        }
+    if ( ( question6[0].checked == false ) || ( question6[1].checked == false ) || ( question6[2].checked == false ) || ( question6[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
 
-    for (i = 0; i < question10.length; i++) {
-        if(!question10[i].checked) { 
-            document.getElementsByClassName('question-field')[9].style.border = "2px solid red"
-            break
+    if ( ( question7[0].checked == false ) || ( question7[1].checked == false ) || ( question7[2].checked == false ) || ( question7[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
+    }  
+
+        if ( ( question8[0].checked == false ) || ( question8[1].checked == false ) || ( question8[2].checked == false ) || ( question8[3].checked == false )) {
+            document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+          
         }
+
+    if ( ( question9[0].checked == false ) || ( question9[1].checked == false ) || ( question9[2].checked == false ) || ( question9[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+        
     }
+
+    if ( ( question10[0].checked == false ) || ( question10[1].checked == false ) || ( question10[2].checked == false ) || ( question10[3].checked == false )) {
+        document.getElementById("error").innerHTML= "Please attempt to answer all questions";
+       
+    } else {
+        document.getElementById("error").innerHTML= "";
+    }
+}
+
+submitButton.addEventListener('click', validate)
+
+
+
 
     
-    }
-
-submitButton.addEventListener('click', checkRadioInput)

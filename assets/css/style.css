@@ -10,6 +10,7 @@
 body {
     font-family: Quicksand, sans-serif;
     color: #36454F;
+    overflow-x: hidden;
 }
 
 /* Header, game rules */
@@ -18,6 +19,7 @@ body {
     background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .game-rules {
@@ -27,7 +29,7 @@ body {
 
 .btn-modal {
     padding: 10px 40px;
-    background: white;
+    background: #1C1C1C;
     text-transform: uppercase;
     color: #87C1FF;
     font-size: 20px;
@@ -63,7 +65,7 @@ body {
     width: 50%;
     padding: 10px;
     background: #87C1FF;
-    color: white;
+    color: #1C1C1C;
     border: 0;
     outline: none;
     font-size: 18px;
@@ -111,7 +113,7 @@ body {
     width: 50%;
     padding: 10px;
     background: #87C1FF;
-    color: white;
+    color: #1C1C1C;
     border: 0;
     outline: none;
     font-size: 18px;
@@ -219,4 +221,34 @@ legend {
 
 #restart a:hover {
     opacity: 0.5;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;        
+
+
+}
+.header-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0; 
+        overflow-x: hidden;        
+    }
 }

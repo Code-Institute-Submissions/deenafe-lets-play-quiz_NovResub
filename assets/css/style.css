@@ -10,7 +10,14 @@
 body {
     font-family: Quicksand, sans-serif;
     color: #36454F;
-    overflow-x: hidden;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;        
 }
 
 /* Header, game rules */
@@ -230,16 +237,8 @@ legend {
 
 /* Media queries */
 
-@media only screen and (max-width: 600px) {
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0; 
-    overflow-x: hidden;        
+@media only screen and (max-width: 820px) {
 
-
-}
 .header-wrapper {
     flex-direction: column;
     justify-content: center;
@@ -247,12 +246,12 @@ html, body {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    html, body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0; 
-        overflow-x: hidden;        
-    }
+@media only screen and (max-width: 600px) {
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0; 
+    overflow-x: hidden;        
+    }    
 }

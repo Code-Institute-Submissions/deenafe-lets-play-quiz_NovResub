@@ -78,9 +78,13 @@ body {
     visibility: visible;
 }
 
-.new-user {
-    padding: 30px;
-    text-decoration: none;   
+.git-contact {
+    padding: 30px;  
+}
+
+.git-contact a{
+    text-decoration: none;  
+    color: #454545;
 }
 
 .new-user a:hover {

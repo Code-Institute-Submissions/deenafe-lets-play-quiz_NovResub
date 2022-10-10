@@ -16,11 +16,11 @@ popClose.addEventListener('click', modalClose);
  * It also remove the "Start Quiz" container after questions display
   */
 
-let startRemove = document.getElementById('start-quiz')
+let startRemove = document.getElementById('start-quiz');
 
 function displayQuestions() {
     document.getElementById("questions-area").style.display = "block";
-    startRemove.classList.add('remove-start')
+    startRemove.classList.add('remove-start');
 }
 
 let startButton = document.getElementById("start-btn");
@@ -45,80 +45,70 @@ const question10 = document.getElementsByName('question10');
 function displayRadioValue() {
     for (let i = 0; i < question1.length; i++) {
         if(question1[i].checked) {
-            document.getElementById("result1").innerHTML
-                        = "You selected: " + question1[i].value;
+            document.getElementById("result1").innerHTML = "You selected: " + question1[i].value;
                         document.getElementsByClassName('question-field')[0].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question2.length; i++) {
         if(question2[i].checked) {
-            document.getElementById("result2").innerHTML
-                        = "You selected: " + question2[i].value;
+            document.getElementById("result2").innerHTML  = "You selected: " + question2[i].value;
                         document.getElementsByClassName('question-field')[1].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question3.length; i++) {
         if(question3[i].checked) {
-            document.getElementById("result3").innerHTML
-                        = "You selected: " + question3[i].value;
+            document.getElementById("result3").innerHTML = "You selected: " + question3[i].value;
                         document.getElementsByClassName('question-field')[2].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question4.length; i++) {
         if(question4[i].checked) {
-            document.getElementById("result4").innerHTML
-                        = "You selected: " + question4[i].value;
+            document.getElementById("result4").innerHTML = "You selected: " + question4[i].value;
                         document.getElementsByClassName('question-field')[3].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question5.length; i++) {
         if(question5[i].checked) {
-            document.getElementById("result5").innerHTML
-                        = "You selected: " + question5[i].value;
+            document.getElementById("result5").innerHTML = "You selected: " + question5[i].value;
                         document.getElementsByClassName('question-field')[4].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question6.length; i++) {
         if(question6[i].checked) {
-            document.getElementById("result6").innerHTML
-                        = "You selected: " + question6[i].value;
+            document.getElementById("result6").innerHTML = "You selected: " + question6[i].value;
                         document.getElementsByClassName('question-field')[5].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question7.length; i++) {
         if(question7[i].checked) {
-            document.getElementById("result7").innerHTML
-                        = "You selected: " + question7[i].value;
+            document.getElementById("result7").innerHTML = "You selected: " + question7[i].value;
                         document.getElementsByClassName('question-field')[6].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question8.length; i++) {
         if(question8[i].checked) {
-            document.getElementById("result8").innerHTML
-                        = "You selected: " + question8[i].value;
+            document.getElementById("result8").innerHTML = "You selected: " + question8[i].value;
                         document.getElementsByClassName('question-field')[7].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question9.length; i++) {
         if(question9[i].checked) {
-            document.getElementById("result9").innerHTML
-                        = "You selected: " + question9[i].value;
+            document.getElementById("result9").innerHTML = "You selected: " + question9[i].value;
                         document.getElementsByClassName('question-field')[8].style.border = "2px solid black"
         }
     }
 
     for (let i = 0; i < question10.length; i++) {
         if(question10[i].checked) {
-            document.getElementById("result10").innerHTML
-                        = "You selected: " + question10[i].value;
+            document.getElementById("result10").innerHTML = "You selected: " + question10[i].value;
                         document.getElementsByClassName('question-field')[9].style.border = "2px solid black"
         }
     }
@@ -210,7 +200,7 @@ function scoreGrading() {
 
 }
 
-submitButton.addEventListener('click', scoreGrading)
+submitButton.addEventListener('click', scoreGrading);
 
 
 

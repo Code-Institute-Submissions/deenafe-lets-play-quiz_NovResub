@@ -29,10 +29,25 @@ html, body {
     text-align: center;
 }
 
+.btn-modal {
+    padding: 10px 40px;
+    background: #1C1C1C;
+    text-transform: uppercase;
+    color: #87C1FF;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 .game-rules {
     padding: 30px;
     font-family: Pacifico, sans-serif;
 }
+
 
 .btn-modal {
     padding: 10px 40px;
@@ -237,14 +252,6 @@ legend {
 
 /* Media queries */
 
-@media only screen and (max-width: 820px) {
-
-.header-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
-}
 
 @media only screen and (max-width: 600px) {
 html, body {
@@ -252,12 +259,12 @@ html, body {
     width: 100%;
     margin: 0;
     padding: 0; 
-    overflow: hidden;        
+    overflow-x: hidden;        
     }   
     
 #logo {
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 300px;
 }   
 
 #logo img {
@@ -266,5 +273,20 @@ html, body {
     max-width: 100%;
     max-height: 100%;
 }
+
+.popup {
+    width: 60%;
+    height: fit-content;
+    margin-top: 100px;
+}
     
 }
+
+@media only screen and (max-width: 820px) {
+
+    .header-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+    }

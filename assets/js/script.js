@@ -50,7 +50,7 @@ function displayRadioValue() {
         if(question1[i].checked) {
             document.getElementById("result1").innerHTML = "You selected: " + question1[i].value;
                         document.getElementsByClassName('question-field')[0].style.border = "2px solid black";
-        }
+        } 
     }
 
     for (let i = 0; i < question2.length; i++) {
@@ -130,21 +130,30 @@ question9.forEach(el => el.addEventListener('click', displayRadioValue));
 question10.forEach(el => el.addEventListener('click', displayRadioValue));
 
 
-let radio = document.getElementsByTagName('input').checked;
-if (radio.length === 10) {
-    
-} 
+/** This function uses jquery to check that each question is attempted by user.
+ * It alerts user if all questions are answered.
+ * If all questions are not answered, it alerts user to answer all questions.
+ * It prevents the score from displaying if all questions are not answered.
+ */
 
-// for(let i=0; i < radio.length; i++) {
-//     if (radio[i].checked) {
-//         selected += radio[i]
-//     }   
-// console.log(selected)
-// }
-   
-
-
-
+$(function() { 
+    $("button[type='submit']").click(function(){
+        let check = true;
+        $("input:radio").each(function(){
+            let name = $(this).attr("name");
+            if($("input:radio[name="+name+"]:checked").length == 0){
+                check = false;
+            }
+        });
+        
+        if(check){
+            alert('All answers checked');
+        }else{
+            alert('Please select at least one answer for each question.');
+            document.getElementById('score-area').style.visibility = "hidden";
+        }
+    });
+});            
 
 
 
@@ -195,6 +204,8 @@ submitButton.addEventListener('click', checkAnswer);
 
 
 
+
+
 let gradeMessage = document.getElementById('grade-message');
 /** This function display an image and message on the "score-area" container
  * Depending on the score (number of correct answers), a diferent image and message will display
@@ -226,6 +237,8 @@ function scoreGrading() {
 
 
 submitButton.addEventListener('click', scoreGrading);
+
+
 
 
 

@@ -130,10 +130,27 @@ question9.forEach(el => el.addEventListener('click', displayRadioValue));
 question10.forEach(el => el.addEventListener('click', displayRadioValue));
 
 
+let radio = document.getElementsByTagName('input').checked;
+if (radio.length === 10) {
+    
+} 
+
+// for(let i=0; i < radio.length; i++) {
+//     if (radio[i].checked) {
+//         selected += radio[i]
+//     }   
+// console.log(selected)
+// }
+   
+
+
+
+
+
 
 let correct = 0;
 
-/** This function checks if the answer selecgted by user is correct
+/** This function checks if the answer selected by user is correct
  * It tallies the number of correct answers and displays score 
  */
 function checkAnswer() {

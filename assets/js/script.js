@@ -1,5 +1,7 @@
 /** Function for popup modal on Let's Play button */
 
+let correct = 0;
+
 let popup = document.getElementById('popup');
 
 function modalOpen() {
@@ -151,13 +153,14 @@ $(function() {
         }else{
             alert('Please select at least one answer for each question.');
             document.getElementById('score-area').style.visibility = "hidden";
+            correct = 0;
         }
     });
 });            
 
 
 
-let correct = 0;
+
 
 /** This function checks if the answer selected by user is correct
  * It tallies the number of correct answers and displays score 
@@ -204,8 +207,6 @@ submitButton.addEventListener('click', checkAnswer);
 
 
 
-
-
 let gradeMessage = document.getElementById('grade-message');
 /** This function display an image and message on the "score-area" container
  * Depending on the score (number of correct answers), a diferent image and message will display
@@ -237,6 +238,7 @@ function scoreGrading() {
 
 
 submitButton.addEventListener('click', scoreGrading);
+
 
 
 

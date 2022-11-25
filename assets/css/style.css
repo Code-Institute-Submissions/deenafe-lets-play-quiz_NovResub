@@ -238,14 +238,15 @@ legend {
     background-color: #800020;
 }
 
-#restart a {
+#restart button {
     text-decoration: none;
     font-weight: bold;
     color: #0AFF0A;
     font-size: 150%;
+    background-color: #800020;
 }
 
-#restart a:hover {
+#restart button:hover {
     opacity: 0.5;
 }
 

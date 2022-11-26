@@ -220,8 +220,8 @@ The logic used for radio input validation was a jquery function with an if state
 ![](docs/playcss.png)
 
 *Javascript*
-* Five errors for missing semi colon was returned when passing the code through [JSHint validator](https://jshint.com/)
-* My attempt to add the missing semi colon to the referenced linesm caused errors to display on my Vs Code editor and for want of time, I could not go through the lines of code to fix it
+* When passing the code through [JSHint validator](https://jshint.com/), the $ sign in the jsquery function came up as an undefined variable.
+
 
 ![](docs/jshint.png)
 

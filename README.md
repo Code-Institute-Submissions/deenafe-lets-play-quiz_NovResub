@@ -227,16 +227,15 @@ The logic used for radio input validation was a jquery function with an if state
 
 
 
-## Identified Bugs
+## Fixed Bugs
 
-* I had issues with the javascript code for my form validation. The code was meant to ensure that all questions are answered before is submitted to check correct answers. I could not resolve this bug due to time constraints and had to remove the validate function to enable me submit my project on before deadline. I hope to go back to resolve the validate function at a later time.
+* I had issues with the javascript code for validating radio inputs to ensure at least one question is answered  from each radio group. To resolve this issue, I used a jquery function with a condition that checks through each group using the radio group name attribute, to confirm if an option was checked. If no radio input is checked for each question, the function returns false and prevents form submission by alerting the user to answer all questions. This is repeated till all questions are answered.
 
-* I have some whitespace on mobile devices below 600px. In my efforts to resolves this I set the overflow of the body and html elements to hidden. I aslo attempted to remove all margins and padding from the page elements but that did not fix it, so I also intend to look into how to fix this at a later date.
+* I had some whitespace on mobile devices below 600px. To fix this, I added some styles to the logo container by giving the container a fixed width and height for devices with max-width of 600px. Then I set the image height and width to auto and max to ensure it dies not overflow its container. I also fixed the pop by giving it specific width and height to fit content.
 
-* As mentiuoned on my Javascript validation testing, I got 5 warnings for missing semi colon but adding the semi colon to the code of template literal strings brings up an error on my code editor. I intend to attend to this at a later date to enable me submit the project.
+## Features left to implement
 
-* I also niticed that the favicon which I added only works on my "Ports View" page but doesn't work on my deployed page. For lack of time, I am unable to look into this.
-
+* After user has completed quiz, they can restart the quiz using the Restart link on socre area. This link redirects to the index page but I would like to change the Restart anchor to a button that would refresh the page and redirect straight to questions area.
 
 ## Deployment 
 ***

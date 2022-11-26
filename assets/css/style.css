@@ -38,8 +38,7 @@ html, body {
     font-family: Pacifico, sans-serif;
 }
 
-
-/* .btn-modal {
+.btn-modal {
     padding: 10px 40px;
     background: #1C1C1C;
     text-transform: uppercase;
@@ -51,7 +50,7 @@ html, body {
     border: 0;
     outline: none;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-} */
+} 
 
 .popup {
     width: 600px;

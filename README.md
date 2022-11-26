@@ -12,7 +12,7 @@
 
 **LET'S PLAY QUIZ** is an online Quiz Game with 10 questions that tests the user's knowledge in the areas of current affairs, science, sports and entertainment
 
-![](docs/mockup.png)
+![](docs/mockup-screen.png)
 
 ***
 ### **Features**
@@ -22,7 +22,7 @@
 * The single page on the website contains the How to Play button, the site logo and link to my github page
 * This will allow users to get information on features of the game by clicking the How to Play button
 
-![](docs/headercapture.png)
+![](docs/header-screen.png)
 
 ### *Favicon* 
 

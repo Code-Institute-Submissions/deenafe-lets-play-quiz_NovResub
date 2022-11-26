@@ -271,7 +271,9 @@ The logic used for radio input validation was a jquery function with an if state
 
 *  The code to get increment correct answers was gotten from a [Youtube Tutorial video by "Kevin Briggs"](https://www.youtube.com/channel/UCeebzVOg5Iv4hVqKTFdaqUQ).
 
-*  The code to to display selected radio values was gotten from a [Geeks for Geeks"](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/#:~:text=To%20get%20the%20value%20of,is%20selected%20and%20False%20otherwise).
+*  The code to to display selected radio values was gotten from a [Geeks for Geeks](https://www.geeksforgeeks.org/how-to-get-value-of-selected-radio-button-using-javascript/#:~:text=To%20get%20the%20value%20of,is%20selected%20and%20False%20otherwise).
+
+* The jsquery code for radio input validation for all the radio groups was gotten from [IAMROHIT.IN](https://iamrohit.in/check-least-one-radio-button-checked-group-using-jquery/).
 
 ### Media   
 

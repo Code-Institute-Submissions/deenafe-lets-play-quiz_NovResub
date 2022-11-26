@@ -23,7 +23,7 @@ popClose.addEventListener('click', modalClose);
 let startRemove = document.getElementById('start-quiz');
 
 function displayQuestions() {
-    let showQuestions = document.getElementById("questions-area").style.display = "block";
+    document.getElementById("questions-area").style.display = "block";
     startRemove.classList.add('remove-start');
 }
 
@@ -149,7 +149,7 @@ $(function() {
         });
         
         if(check){
-            alert('All answers checked');
+            console.log("All questions answered");
         }else{
             alert('Please select at least one answer for each question.');
             document.getElementById('score-area').style.visibility = "hidden";
@@ -216,39 +216,25 @@ function scoreGrading() {
 
 
     if (correct < 1) {
-        gradeMessage.innerHTML = `<img src="${pics[0]}" alt="Two men with gloomy demeanor"> <br> <span>A poor result, why not try again</span>` 
+        gradeMessage.innerHTML = `<img src="${pics[0]}" alt="Two men with gloomy demeanor"> <br> <span>A poor result, why not try again</span>`; 
     }
 
     if (correct >= 1 && correct < 5) {
-        gradeMessage.innerHTML = `<img src="${pics[1]}" alt="Man in kung-fu pose challenging viewer to do better"> <br> <span> You can do better, why not try again. </span> ` 
+        gradeMessage.innerHTML = `<img src="${pics[1]}" alt="Man in kung-fu pose challenging viewer to do better"> <br> <span> You can do better, why not try again. </span> `; 
     }
 
     if (correct >= 5 && correct < 8) {
-        gradeMessage.innerHTML = `<img src="${pics[2]}" alt="Man encouraging and urging viewer to improve"> <br> <span> You did good, but you can do better. </span>` 
+        gradeMessage.innerHTML = `<img src="${pics[2]}" alt="Man encouraging and urging viewer to improve"> <br> <span> You did good, but you can do better. </span>`; 
     }
 
     if (correct >= 8 && correct < 10) {
-        gradeMessage.innerHTML = `<img src="${pics[3]}" alt="Man performing on stage in exicted mood"> <br> <span> You did Great!!!. </span>`
+        gradeMessage.innerHTML = `<img src="${pics[3]}" alt="Man performing on stage in exicted mood"> <br> <span> You did Great!!!. </span>`;
     }
 
     if (correct == 10) {
-        gradeMessage.innerHTML = `<img src="${pics[4]}" alt="A famous genius, Albert Einstein"> <br> <span> Excellent!!! you must be a genuis. </span>`
+        gradeMessage.innerHTML = `<img src="${pics[4]}" alt="A famous genius, Albert Einstein"> <br> <span> Excellent!!! you must be a genuis. </span>`;
     }
 }
 
 
 submitButton.addEventListener('click', scoreGrading);
-
-
-let restartBtn = document.getElementById("restart-btn")
-
-function restartQuiz() {
-    location.reload();  
-}
-
-restartBtn.addEventListener('click', restartQuiz, true);
-
-
-
-
-

@@ -195,6 +195,12 @@ let correct = 0
 *    if (question10[1].checked === true) {
         correct++; }
 
+###  Radio Input Validation
+
+The form input validation was done to ensure that all question are answered before submission.
+
+The logic used for radio input validation was a jquery function with an if statement that checks if at least one input is checked from each radio group. If no input is checked for each group, an alert message is displayed asking the user to select one answer for each question.
+
 
 ###  Lighthouse Testing
 

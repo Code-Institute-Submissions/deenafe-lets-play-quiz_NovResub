@@ -23,7 +23,7 @@ popClose.addEventListener('click', modalClose);
 let startRemove = document.getElementById('start-quiz');
 
 function displayQuestions() {
-    document.getElementById("questions-area").style.display = "block";
+    let showQuestions = document.getElementById("questions-area").style.display = "block";
     startRemove.classList.add('remove-start');
 }
 
@@ -239,6 +239,14 @@ function scoreGrading() {
 
 submitButton.addEventListener('click', scoreGrading);
 
+
+let restartBtn = document.getElementById("restart-btn")
+
+function restartQuiz() {
+    location.reload();  
+}
+
+restartBtn.addEventListener('click', restartQuiz, true);
 
 
 

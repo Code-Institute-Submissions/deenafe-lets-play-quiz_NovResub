@@ -50,14 +50,16 @@
 
 * The quiz questions comprises of 10 question with each question having 4 answer options.
 * Only one answer can be selected for each question. An answer is selected by clicking on a button that comes before the answer.
-* When an answer is selected, the outline of the auestion and answers group will highlight with a thicker border.
+* When an answer is selected, the outline of the question and corresponding answers group will highlight with a thicker border.
 
 ![](docs/questions.png)
 
 ### *Submit button*
 
-* The submit button when clicked allows the quiz question to be assessed to confirm the correct answers.
-* Clicking the button displays a pop up with the score obtained by the user. 
+* Upon clicking the submit button, a function checks to ensure that all questions were answered.
+* The submit button also prompts validation that all questions were answered before checking for correct answers. If all questions are not answered, the user gets an alert on the screen with the following message "Please select at least one answer for each question".
+* If all questions are answered, then the answers selected by the user will be checked to determine which questions were answered correctly. 
+* Based on the number of correct answers, the score obtained by the user will be displayed in a pop up along with an image.
 
 ![](docs/submitbtn.png)
 
